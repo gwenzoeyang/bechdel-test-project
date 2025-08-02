@@ -1,0 +1,18 @@
+---
+:id: 251399386
+:submitters:
+- :name: Audrey Wang
+  :email: aw126@wellesley.edu
+- :name: Aileen Du
+  :email: aileendu@mit.edu
+- :name: Suzanne Xu
+  :email: sx106@wellesley.edu
+- :name: Gwen-Zoe Yang
+  :email: gy101@wellesley.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2024-05-01 13:49:51.121200000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2024-05-01 06:49:51.121200000 Z
+:status: processed
+:score: 82.0

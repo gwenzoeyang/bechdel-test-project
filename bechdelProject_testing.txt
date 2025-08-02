@@ -1,0 +1,86 @@
+The original adjacency list graph.
+Number of vertices: 8
+Number of arcs: 20
+Vertices: 
+[Alpha, Tyler Perry, Cassi Davis, Patrice Lovely, Stella, Beta, Takis, Gamma]
+
+Arcs: 
+from Alpha: [Tyler Perry, Cassi Davis, Patrice Lovely, Stella]
+from Tyler Perry: [Alpha, Beta, Gamma]
+from Cassi Davis: [Alpha, Beta, Gamma]
+from Patrice Lovely: [Alpha, Beta]
+from Stella: [Alpha]
+from Beta: [Tyler Perry, Cassi Davis, Patrice Lovely, Takis]
+from Takis: [Beta]
+from Gamma: [Tyler Perry, Cassi Davis]
+
+
+The adjacency list graph after adding new vertex Aileen and an edge between Aileen and Beta.
+Vertices: 
+[Alpha, Tyler Perry, Cassi Davis, Patrice Lovely, Stella, Beta, Takis, Gamma, Aileen]
+
+Arcs: 
+from Alpha: [Tyler Perry, Cassi Davis, Patrice Lovely, Stella]
+from Tyler Perry: [Alpha, Beta, Gamma]
+from Cassi Davis: [Alpha, Beta, Gamma]
+from Patrice Lovely: [Alpha, Beta]
+from Stella: [Alpha]
+from Beta: [Tyler Perry, Cassi Davis, Patrice Lovely, Takis, Aileen]
+from Takis: [Beta]
+from Gamma: [Tyler Perry, Cassi Davis]
+from Aileen: [Beta]
+
+Expected: false. Result: false
+Expected: true. Result: true
+Expected: false. Result: false
+
+The adjacency list graph after removing Stella and the edge between Aileen and Beta.
+Vertices: 
+[Alpha, Tyler Perry, Cassi Davis, Patrice Lovely, Beta, Takis, Gamma, Aileen]
+
+Arcs: 
+from Alpha: [Tyler Perry, Cassi Davis, Patrice Lovely]
+from Tyler Perry: [Alpha, Beta, Gamma]
+from Cassi Davis: [Alpha, Beta, Gamma]
+from Patrice Lovely: [Alpha, Beta]
+from Beta: [Tyler Perry, Cassi Davis, Patrice Lovely, Takis]
+from Takis: [Beta]
+from Gamma: [Tyler Perry, Cassi Davis]
+from Aileen: []
+
+Vertices: 
+[Alpha, Tyler Perry, Cassi Davis, Patrice Lovely, Stella, Beta, Takis, Gamma]
+
+Arcs: 
+from Alpha: [Tyler Perry, Cassi Davis, Patrice Lovely, Stella]
+from Tyler Perry: [Alpha, Beta, Gamma]
+from Cassi Davis: [Alpha, Beta, Gamma]
+from Patrice Lovely: [Alpha, Beta]
+from Stella: [Alpha]
+from Beta: [Tyler Perry, Cassi Davis, Patrice Lovely, Takis]
+from Takis: [Beta]
+from Gamma: [Tyler Perry, Cassi Davis]
+
+Expected seprataion is 0. Result: 0
+Expected seprataion is 1. Result: 1
+Actors not found.
+Expected separation is -1, means Actors not found. Result: -1
+Input the % of women in the cast that passes the test (ex. 48, 23): 
+50
+Movies that passed the new Bechdel Test: ["Gamma", "Beta", "Alpha"]
+
+The movies that Jennifer Lawrence has acted in: [X-Men: Apocalypse, Passengers]
+
+The actors in The Jungle Book: [Bill Murray, Ben Kingsley, Idris Elba, Lupita Nyong'o, Scarlett Johansson, Giancarlo Esposito, Christopher Walken, Neel Sethi, Garry Shandling, Brighton Rose, Jon Favreau]
+
+The separation between Megan Fox and Tyler Perry is: 0
+The separation between Nick Arapoglou and Tyler Perry is: 2
+
+Expected seprataion is 0. Result: 0
+Expected seprataion is 1. Result: 1
+Expected separation is 2. Result: 2
+Expected separation is 3. Result: 3
+Expected separation is 4. Result: 4
+Input the % of women in the cast that passes the test (ex. 48, 23): 
+60
+Movies that passed the new Bechdel Test: ["Bad Moms", "Lights Out"]
